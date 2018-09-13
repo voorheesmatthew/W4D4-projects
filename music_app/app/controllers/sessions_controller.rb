@@ -13,8 +13,8 @@ class SessionsController < ApplicationController
       login!(@user)
       redirect_to user_url(@user)
     else
-      flash.now[:errors] = ['Wrong! Try again.']
-      render :new
+      flash[:errors] = ['Wrong! Try again.']
+      redirect_to new_session_url
     end
   end
 
