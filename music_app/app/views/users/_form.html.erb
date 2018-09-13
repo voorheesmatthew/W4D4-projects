@@ -1,0 +1,19 @@
+<% if type == :new
+  action_url = users_url
+  button_val = "Create yourself!"
+elsif type == :login
+  action_url = session_url
+  button_val = "Login, yo!"
+end %>
+
+<form action="<%= action_url %>" method="post">
+  <%= auth_token %>
+
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="user[email]" value="<%= user.email %>">
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="user[password]" value="<%= user.password %>">
+
+  <input type="submit" value="<%= button_val %>">
+</form>
