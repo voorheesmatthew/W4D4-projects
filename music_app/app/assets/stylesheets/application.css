@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+header {
+  background-color: blue
+}
+
+.header_button {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+ h1 {
+   color: yellow;
+   font-style: oblique;
+   font-family: fantasy;
+   background-color: green;
+   display: flex;
+   justify-content: center;
+ }
+
+ form {
+   display: flex;
+   justify-content: center;
+ }
+
+ h2 {
+   color: white;
+   font-style: oblique;
+   font-family: fantasy;
+   display: flex;
+   justify-content: flex-end;
+ }

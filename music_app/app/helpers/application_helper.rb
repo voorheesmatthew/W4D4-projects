@@ -14,4 +14,6 @@ module ApplicationHelper
   def delete_method_overide
     "<input type='hidden' name='_method' value='delete'>".html_safe
   end
+
+
 end

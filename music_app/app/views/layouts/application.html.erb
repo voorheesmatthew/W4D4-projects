@@ -11,21 +11,23 @@
 
   <body>
     <header>
+      <h1>My Space 2.0</h1>
       <% if logged_in? %>
-      <form class="" action="<%= session_url %>" method="post">
+      <h2>Logged In As : <%= current_user.email %></h2>
+      <form action="<%= session_url %>" method="post">
         <%= auth_token %>
         <%= delete_method_overide %>
-        <input type="submit" name="" value="Logout!">
+        <input class="header_button" type="submit" name="" value="Logout!">
       </form>
       <% else %>
-        <form class="" action="<%= new_session_url %>" method="post">
+        <form action="<%= new_session_url %>" method="post">
           <%= get_method_overide %>
-          <input type="submit" name="" value="Login!">
+          <input class="header_button" type="submit" name="" value="Login!">
         </form>
 
-        <form class="" action="<%= new_user_url %>" method="post">
+        <form action="<%= new_user_url %>" method="post">
           <%= get_method_overide %>
-          <input type="submit" name="" value="Sign Up!">
+          <input class="header_button" type="submit" name="" value="Sign Up!">
         </form>
       <% end %>
     </header>

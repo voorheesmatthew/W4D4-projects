@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Band.destroy_all
+
+Band.create([{name: 'Blink-182'}, {name: 'Bon Jovi'}, {name: 'Rush'}])
+
+User.destroy_all
+
+User.create([{email: 'musicman@yahoo.com', password: 'qwerty'}, {email: 'missmyspace@hotmail.com', password: 'qwerty'}, {email: 'easy', password: 'qwerty'}])
